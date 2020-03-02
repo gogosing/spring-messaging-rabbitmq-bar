@@ -7,10 +7,3 @@ spring:
     port: ${AMQP_PORT:5672}
     username: ${AMQP_USERNAME:guest}
     password: ${AMPQP_PASSWORD:guest}
-
-eureka:
-  instance:
-    instance-id: ${spring.application.name}:${POD_NAME:localhost}:${server.port:8080}
-  client:
-    service-url:
-      default-zone: http://${EUREKA_HOST:localhost}:${EUREKA_PORT:8761}/eureka/
