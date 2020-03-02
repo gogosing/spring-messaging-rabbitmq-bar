@@ -1,0 +1,9 @@
+spring:
+  cloud:
+    stream:
+      bindings:
+        barInput:
+          destination: bar.in
+          group: bar-service-group
+        barOutput:
+          destination: bar.out
