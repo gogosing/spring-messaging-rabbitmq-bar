@@ -5,8 +5,8 @@ spring:
   rabbitmq:
     host: ${AMQP_HOST:localhost}
     port: ${AMQP_PORT:5672}
-    username: guest
-    password: guest
+    username: ${AMQP_USERNAME:guest}
+    password: ${AMPQP_PASSWORD:guest}
 
 eureka:
   instance:
